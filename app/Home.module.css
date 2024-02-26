@@ -1,0 +1,102 @@
+/* ParallaxLandingPage.module.css */
+
+/* Global styles */
+
+  /* Hero section */
+  .heroSection {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    background-image: url('../public/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .heroContent {
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  .heroContent h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .heroContent p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .ctaButton {
+    background-color: #ff3366;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .ctaButton:hover {
+    background-color: #ff0044;
+  }
+  
+  /* Section content */
+  .section {
+    padding: 100px 0;
+  }
+  
+  .sectionContent {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  /* Background images for each section */
+  .dogCareBackground {
+    background-image: url('../public/dog-care-background.jpg');
+    height: 600px;
+  }
+  
+  .volunteerBackground {
+    background-image: url('../public/volunteer-background.jpg');
+    height: 600px;
+
+  }
+  
+  .shelterBackground {
+    background-image: url('../public/shelter-background.jpg');
+    height: 600px;
+
+  }
+  
+  .foodBackground {
+    background-image: url('../public/food.jpeg');
+    height: 600px;
+
+  }
+  
+  .waterBackground {
+    background-image: url('../public/water-background.jpg');
+    height: 600px;
+
+  }
+  
+  /* Add more background classes for additional sections */
+  

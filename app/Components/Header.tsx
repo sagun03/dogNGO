@@ -28,7 +28,7 @@ const Header: React.FC = () => {
   const isActive = (route: string) => {
     console.log("window", window.location.pathname, route)
     if (typeof window !== 'undefined') {
-        return window.location.pathname === route ? 'text-green-100' : 'text-red-200';
+        return window.location.pathname === route ? 'text-green-100' : '';
       }
   };
 
@@ -39,6 +39,11 @@ const Header: React.FC = () => {
         <div className="text-xl font-bold">Dog NGO</div>
       </div>
       <ul className="hidden md:flex space-x-4">
+      <li>
+          <Link href="/home">
+            <p className={`cursor-pointer flex items-center ${isActive('/')}`}>Home</p>
+          </Link>
+        </li>
         <li className="relative group">
           <div className={`cursor-pointer flex items-center ${isActive('/about')}`} onClick={() => handleToggleDropdown('about')}>
             About
