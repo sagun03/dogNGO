@@ -11,6 +11,7 @@
     background-color: #f0f0f0;
     background-image: url('../public/hero-background.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     color: #ffffff;
     text-align: center;
@@ -49,6 +50,9 @@
   /* Section content */
   .section {
     padding: 100px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   
   .sectionContent {
@@ -81,7 +85,7 @@
   }
   
   .shelterBackground {
-    background-image: url('../public/shelter-background.jpg');
+    background-image: url('../shelter-background.jpg');
     height: 600px;
 
   }
