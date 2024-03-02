@@ -102,5 +102,20 @@
 
   }
   
-  /* Add more background classes for additional sections */
+  @media (max-width: 768px) {
+    .section {
+      background-attachment: fixed;
+      background-position: center;
+     
+    }
+    .dogCareBackground {
+      background-image: url('../public/8.jpg');
+      height: 600px;
+    }
+    .volunteerBackground {
+      background-image: url('../public/1.jpg');
+      height: 600px;
+  
+    }
+  }
   

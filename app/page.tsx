@@ -113,7 +113,7 @@ const ParallaxLandingPage = () => {
       </div>
 
       {/* Dog Care Section */}
-      <div className={`${styles.section} ${styles.dogCareBackground}`}>
+      <div className={`${styles.section} ${styles.dogCareBackground} `}>
         <div className={`${styles.sectionContent}`}>
           <h2 className="text-xl font-bold inline-block text-white bg-black bg-opacity-10 px-4 py-2 rounded-md">Compassionate Care</h2>
           <p className='text-base text-white bg-black bg-opacity-10 px-4 py-2 rounded-md'>At Paws of Love, we provide compassionate care to every dog we rescue. From veterinary treatment to fostering, we ensure that every dog receives the love and attention they deserve.</p>
