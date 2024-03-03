@@ -33,7 +33,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-gray-800 text-white z-50">
+    <header className="fixed top-0 left-0 w-full bg-gradient-to-r from-blue-700 to-blue-900 text-white z-50">
     <nav className="container mx-auto flex justify-between items-center py-4">
       <div>
         <div className="text-xl font-bold">Dog NGO</div>
