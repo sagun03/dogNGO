@@ -70,6 +70,7 @@
 .volunteerBackground,
 .shelterBackground,
 .foodBackground,
+.faqBackground,
 .waterBackground {
   height: 700px;
   display: flex;
@@ -98,6 +99,11 @@
   background-image: url('../public/water-background.jpg');
 }
 
+.faqBackground {
+  padding: 0;
+  background-image: url('../public/faq.jpg');
+}
+
 /* Media queries */
 @media (max-width: 768px) {
   .section {
@@ -119,6 +125,9 @@
   
   .waterBackground {
     background-image: url('../public/4.jpg');
+  }
+  .faqBackground {
+    background-image: url('../public/faq1.jpeg');
   }
 }
 

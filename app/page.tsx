@@ -78,6 +78,7 @@ import styles from './home.module.css'; // Import CSS styles
 // export default ParallaxLandingPage;
 // import styles from './ParallaxLandingPage.module.css';
 import Image from 'next/image';
+import FAQSection from './Components/Faq';
 
 const ParallaxLandingPage = () => {
   // Function to handle scroll event and update background positions
@@ -88,7 +89,7 @@ const ParallaxLandingPage = () => {
       const sectionOffset = section.offsetTop;
       const sectionHeight = section.offsetHeight;
       const sectionTop = sectionOffset - scrollPosition;
-      const bgPosition = (sectionTop / sectionHeight) * 50; // Adjust parallax speed here
+      const bgPosition = (sectionTop / sectionHeight) * 90; // Adjust parallax speed here
       section.style.backgroundPositionY = `${bgPosition}%`;
     });
   };
@@ -155,11 +156,9 @@ const ParallaxLandingPage = () => {
     
 
       {/* FAQ Section */}
-      <div className={`${styles.section}`}>
-        <div className={`${styles.sectionContent}`}>
-          <h2>Frequently Asked Questions</h2>
-          <p>Have questions about our organization and our work? Check out our FAQ section to find answers to commonly asked questions. If you don&apos;t find what you&apos;re looking for, feel free to contact us.</p>
-        </div>
+      <div >
+      <FAQSection />
+
       </div>
 
       {/* Contact Section */}
