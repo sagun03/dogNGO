@@ -26,7 +26,6 @@ const Header: React.FC = () => {
     });
   };
   const isActive = (route: string) => {
-    console.log("window", window.location.pathname, route)
     if (typeof window !== 'undefined') {
         return window.location.pathname === route ? 'text-green-100' : '';
       }
