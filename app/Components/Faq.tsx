@@ -9,7 +9,7 @@ const FAQItem = ({ question, answer }) => {
         className="flex justify-between w-full bg-blue-600 text-white dark:bg-gray-800 dark:text-gray-200 rounded-lg px-6 py-4 transition duration-300 ease-in-out hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="text-lg font-semibold">{question}</span>
+        <span className="text-sm sm:text-lg font-semibold">{question}</span>
         <span className="flex items-center">
           {isOpen ? (
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
@@ -23,46 +23,49 @@ const FAQItem = ({ question, answer }) => {
         </span>
       </button>
       {isOpen && (
-        <p className="mt-4 text-gray-800 dark:text-gray-200 leading-6">{answer}</p>
+        <p className="text-sm sm:text-base mt-4 text-gray-800 dark:text-gray-200 leading-6">{answer}</p>
       )}
     </div>
   );
 };
 
 const FAQSection = () => {
-  return (
-    <div className="py-20 bg-gradient-to-r from-purple-400 to-purple-600 dark:from-gray-900 dark:to-gray-800">
-      <div className="max-w-4xl mx-auto px-4">
-        <h1 className="text-4xl text-center text-white font-bold mb-12">Frequently Asked Questions</h1>
-        <div className="space-y-8">
-          <FAQItem
-            question="What does Lifetime Access exactly mean?"
-            answer="Tailwind Master Kits' lifetime access gives you access to the components and the code with no additional recurring charges. Pay once, use the components forever. Also, if in the future more components are added, you get access to them if you're subscribed for the lifetime access membership."
-          />
-          <FAQItem
-            question="How is One-Year access pass different from Lifetime Access?"
-            answer="With One-Year pass, you get access to all the premium components for One Year and all the updates are for One Year only. With Lifetime Access, you get access to the entire set for features for Lifetime - Which means you can get future updates for the components as long as the website is live."
-          />
-          <FAQItem
-            question="Can I resell the components on my own website?"
-            answer="No. You cannot resell the components on your own website claiming that you built them. You cannot create templates out of Tailwind Master Kit's components and sell them. You can use the components for client projects and personal use."
-          />
-          <FAQItem
-            question="What are Free Updates?"
-            answer="We are tirelessly working on adding more quality components on the platform. Most of our components are premium but we do release free components and keep on updating them regularly. Lookout for our newsletter, we release new components every month."
-          />
-          <FAQItem
-            question="On how many projects can I use Tailwind Master Kit's components?"
-            answer="With Tailwind Master Kit's Lifetime Access Pass, you can use the components on as many websites as you want - which is unlimited. As long as its just you who is using the licence, use it on unlimited projects."
-          />
-          <FAQItem
-            question="What is community access and how is it beneficial for me?"
-            answer="You get access to our private Discord Server where you can request for custom components, seek help from the makers of Tailwind Master Kit and other connect and network with other like minded people who are already using the product."
-          />
+    return (
+      <>
+      <div className="py-10 lg:py-20 bg-gradient-to-r from-blue-400 to-blue-600 dark:from-gray-900 dark:to-gray-800">
+        <div className="max-w-4xl mx-auto px-4">
+          <h1 className="text-2xl lg:text-4xl text-center text-white font-bold mb-8 lg:mb-12">Frequently Asked Questions</h1>
+          <div className="space-y-6 md:space-y-8">
+            <FAQItem
+              question="How can I adopt a dog from your NGO?"
+              answer="To adopt a dog from our NGO, you can start by browsing the available dogs on our website or visiting our shelter. Once you've found a dog you're interested in, fill out an adoption application form. Our team will review your application and conduct a home visit to ensure the dog's welfare. Upon approval, you can finalize the adoption process and welcome your new furry friend into your home."
+            />
+            <FAQItem
+              question="What is the adoption fee, and what does it include?"
+              answer="Our adoption fee varies depending on the dog's age, breed, and medical history. However, it typically includes vaccinations, spaying/neutering, microchipping, and a basic health check-up. This fee helps us cover the costs associated with caring for the dogs in our shelter and preparing them for adoption."
+            />
+            <FAQItem
+              question="Do you accept donations, and how can I contribute?"
+              answer="Yes, we greatly appreciate donations from compassionate individuals like you! You can contribute in various ways, including monetary donations, in-kind donations (such as food, toys, and bedding), volunteering your time at our shelter, or sponsoring a dog's medical expenses. Your generosity helps us continue our mission of rescuing and caring for dogs in need."
+            />
+            <FAQItem
+              question="Can I surrender my dog to your NGO if I can no longer care for it?"
+              answer="Yes, we understand that circumstances may change, and we're here to help. If you're unable to care for your dog anymore, please reach out to us to discuss surrendering options. We'll assess the dog's health and behavior and work to find the best possible solution, which may include finding a new loving home through our adoption program."
+            />
+            <FAQItem
+              question="How can I volunteer with your NGO?"
+              answer="We welcome volunteers who are passionate about making a difference in the lives of dogs. You can volunteer by assisting with daily care tasks at our shelter, participating in fundraising events, fostering dogs in your home, or helping with administrative duties. Contact us to learn more about volunteer opportunities and how you can get involved."
+            />
+            <FAQItem
+              question="What should I do if I find a stray dog?"
+              answer="If you come across a stray dog, it's essential to approach with caution and ensure your safety. If possible, gently contain the dog and check for any identification tags or microchips. If the dog is injured or in distress, contact local animal control or a nearby veterinary clinic for assistance. You can also reach out to our NGO, and we'll do our best to help the dog and reunite it with its owner or find a suitable home."
+            />
+          </div>
         </div>
       </div>
-    </div>
-  );
-};
-
+      </>
+    );
+  };
+  
 export default FAQSection;
+

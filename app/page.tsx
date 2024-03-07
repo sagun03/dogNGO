@@ -79,6 +79,7 @@ import styles from './home.module.css'; // Import CSS styles
 // import styles from './ParallaxLandingPage.module.css';
 import Image from 'next/image';
 import FAQSection from './Components/Faq';
+import GetInTouch from './Components/GetInTouch';
 
 const ParallaxLandingPage = () => {
   // Function to handle scroll event and update background positions
@@ -162,11 +163,8 @@ const ParallaxLandingPage = () => {
       </div>
 
       {/* Contact Section */}
-      <div className={`${styles.section}`}>
-        <div className={`${styles.sectionContent}`}>
-          <h2>Get in Touch</h2>
-          <p>Have questions or want to get involved? We&apos;d love to hear from you! Contact us via phone, email, or through our social media channels. Together, we can make a difference in the lives of dogs.</p>
-        </div>
+      <div >
+      <GetInTouch />
       </div>
     </div>
   );
